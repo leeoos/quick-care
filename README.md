@@ -1,8 +1,8 @@
-# Quick-Care
+# Quick Care
 
 Quick Care è un sito web per la prenotazione online di prestazioni sanitarie negli ospedali conenzionati con il sistema sanitario della Regione Lazio.
 
-## Project Structure
+## Struttura del Progetto
 
 Vi sono due comeponenti principali:
 
@@ -17,7 +17,7 @@ Vi sono due comeponenti principali:
 
   
 
-## How To Build And Populate The Database
+## Come inizializzare e popolare il database
 Per costruire il Database di QuickCare in un sistema ``postgres`` esegui i comandi:
 
 ```
@@ -31,7 +31,7 @@ Per popolare il Database:
 ```
 \i QuickCare/Database/data_samples.sql
 ```
-## How To Test The Application
+## Come testare il sito
 Dopo aver scaricato il codice sorgente sarà possibile testare l'applicazione caricando la cartella WebPage su localhost.
 
 Una volta popolato il Database tre classi di codici di prenotazione saranno resi disponibili, ogni classe sarà associata ad uno degli utenti di prova, i cui dati, necessari per richiedere una prestazione sanitaria, sono riportati qui sotto:
