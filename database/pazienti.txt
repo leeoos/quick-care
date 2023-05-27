@@ -1,0 +1,22 @@
+Pazienti  con Prescrizione:
+
+Lucilla     |Fragala        |FRGLLL25L65B960D       |A  LCOQvtwd
+
+Esempio area riservata:
+
+Giusto      |Orsini         |RSNGST16B17H861J       |B          L2LYlhkH   
+
+Gia inserito con appuntamenti: 
+
+Placido     |Danesi         |DNSPCD43C29E910S       |C 
+
+    - 10.00 2021-05-25 oncologia Policlinico
+
+    - 16.00 2021-05-25 oncologia Pertini
+
+
+Prescazioni numerose:
+oncologia
+radiologia (TAC Risonanza)
+
+Area_Riservata/View/area-riservata.php

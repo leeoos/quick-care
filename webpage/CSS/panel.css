@@ -1,0 +1,18 @@
+div.panel,p.flip{
+    line-height: 30px;
+    margin:auto;
+    font-size:16px;
+    padding:5px;
+    text-align:center;
+    background:#555;
+    border:solid 1px #666;
+    color:#ffffff;
+    border-radius:3px;
+    user-select:none
+    }
+div.panel{
+    display:none;
+    }
+p.flip {
+    cursor:pointer;
+    }

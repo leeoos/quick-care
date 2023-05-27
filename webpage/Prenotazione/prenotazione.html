@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!--Pagina di prenotazione-->
+        <title>Prenotazione</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+
+        <link rel="stylesheet" type="text/css" href="../Bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/navbar.css" >
+
+        <style>
+
+        </style>
+        <!--Script con funzioni di controllo per il form -->
+        <script type="text/javascript" lang="javascript"
+        src="../JS/form-contols.js">
+        </script>
+        
+    </head>
+
+    <body class="text-center" >
+        <!-- Inserimento della Barra di Navigazione -->
+        <div class="topnav">
+            <a class="active" href="../index.html">Indietro</a>
+        </div>
+
+        <h1>Prenotazione prestazioni sanitarie </h1>
+            <h2>compila il modulo seguente per prenotare</h2>
+        <br> <br>
+        <!--Form di prenotazione che onsubmit richiama validForm in from-controls
+            e invia i dati del form alla pagina ospedali.php-->
+        <div>
+            <p style="font-size: 10; color: rgba(224, 48, 48, 0.993);">  * campi obbligatori </p>
+            <form action="ospedali.php"
+                method="POST" name="formPren" onsubmit="return validForm()">
+                <div class="form-group">
+
+                    <input type="text" name="name"  size="50" maxlength="50" 
+                    placeholder="Nome*" value=""  autofocus /> 
+                    <br> <br>
+
+                    <input type="text" name="surname"  size="50" maxlength="50" 
+                    placeholder="Cognome*" value="" autofocus />
+                    <br> <br>
+
+                    <input type="text" name="cf"  size="50" maxlength="50" 
+                    placeholder="Codice Fiscale*" value="" autofocus />
+                    <br> <br>
+
+                    <input type="text" name="phone"  size="50" maxlength="50" 
+                    placeholder="Numero di telefono" value="" autofocus />
+                    <br> <br>
+
+                    <input type="email" name="email"  size="50" maxlength="50" 
+                    placeholder="e-mail*" value="" autofocus />
+                    <br> <br>
+
+                    <input type="text" name="codice"  size="50" maxlength="50" 
+                    placeholder="Codice Ricetta*" value="" autofocus />
+                    <br> <br>
+
+                    <a href="../informativa.html" 
+                        role="button" class="btn btn-link" >Informativa sul trattamento dei dati personali</a>
+                    <br>
+                    <input type="radio" name="privacy"  value="" onclick="privacyInfo =this.value;" > acconsento
+                    <br> <br>
+
+                    <select name="prestazione"   >
+                    <option value="null">Seleziona una Prestazione</option>
+                    <option value="'cardiologia'">Visita cardiologica</option>
+                    <option value="'dermatologia'">Visita dermatologica</option>
+                    <option value="'endocrinologia'">Visita endocrinologica</option>
+                    <option value="'fisiatria'">Visita fisiatrica</option>
+                    <option value="'gastroenterologia'">Visita gastroenterologica</option>
+                    <option value="'ginecologia'">Visita ginecologica</option>
+                    <option value="'neurologia'">Visita neurologica</option>
+                    <option value="'oculistica'">Visita oculistica</option>
+                    <option value="'oncologia'">Visita oncologica</option>
+                    <option value="'ortopedia'">Visita ortopedica</option>
+                    <option value="'otorinolaringoiatra'">Visita otorinolaringoiatrica</option>
+                    <option value="'pneumologia'">Visita pneumologica</option>
+                    <option value="'urologia'">Visita urologica</option>
+                    <option value="'cardiologia'">Visita vascolare </option>
+                    <option value="'ecografia'">Ecografia</option>
+                    <option value="'cardiologia'">Elettrocardiogramma</option>
+                    <option value="'elettromiografia'">Elettromiografia</option>
+                    <option value="'radiologia'">TAC</option>
+                    <option value="'radiologia'">Risonaza Magnetica</option>    
+                    </select>
+                    <br> <br>
+
+                    <input type="submit" value="Prenota" class="btn btn-success">
+                    <input type="reset" value="Reset" >
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>
+
+
